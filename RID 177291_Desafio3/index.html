@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="shortcut icon" type="imagex/png" href="./icons/icon-task.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <header class="title-text">
+            <h1>Board de tarefas</h1>
+    </header>
+    <main>
+        <section id="card-index">
+            
+            <div class="create">
+                <input type="text" name="description" class="box-input" id="create-task" placeholder="Nome da tarefa">
+                <input type="text"  name="etiqueta" class="box-input" id="create-etiqueta" placeholder="Etiqueta">
+                <button type="submit" id="btn-plus" class="btn-desing" >+</button>
+            </div>
+            <!--Altere essa class para 'card-list'-->
+            <section class="todo-list-section"> 
+                <ul id="todo-list-card">
+                </ul>
+            </section>
+        </section>
+    </main>
+</body>
+<footer >
+    <div id="task-progress"></div>
+</footer>
+<script src="index.js"></script>
+</html>

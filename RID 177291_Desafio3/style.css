@@ -1,0 +1,322 @@
+html{
+    width: 100%;
+    height: 100%;
+    box-sizing: 10px;
+}
+
+body{
+    width: auto;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+}
+
+.title-text{
+    margin: 0;
+    padding: 1.5rem 2rem;
+    width: 40rem;
+    height: 36rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    height: auto;
+
+}
+
+h1{    font-family: "Manrope", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    color: #11175e;
+    padding-top: 1rem;
+}
+
+
+#card-index{
+    margin: 0;
+    padding: 1.5rem 2rem;
+    width: 40rem;
+    height: 36rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    height: auto;
+}
+
+.create{
+ display: flex;
+ flex-direction: row;
+ gap: 1rem;
+}
+
+.task-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.box-input{
+    border: none;
+    font-size: 1.2rem;
+    color: #cdc6c6;
+    border-radius: .5rem;
+    width: 15.8rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    margin: 0;
+}
+
+.btn-desing{
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    color: white;
+    background-color: #2D70FD;
+    padding: .8rem 1.2rem;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.btn-concluir {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #2D70FD;
+    color: white;
+    border: none;
+    padding: .8rem 1.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.btn-concluded{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: default;
+    padding: 0;
+}
+
+
+.button-icon {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn-desing:hover, .btn-concluir:hover {
+    background-color: #11175e;
+    transition:0.3s;
+
+}
+
+.task-pending {
+    font-weight: 700;
+    color: #001747;
+}
+
+/* Tarefa concluída */
+.task-completed {
+    background-color: #e8e8e8;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+
+/*Bloco das tasks*/
+.todo-list-section{
+    padding: auto;
+    margin: 0.8rem 0 1.6rem;
+    min-height: 5rem;
+
+    & > ul> li{
+        list-style-type: none;
+        padding: 1.5rem .8rem;
+        border: none;
+    }
+}
+
+.todo-list-section ul{
+    padding-inline-start: 0rem;
+    height: auto;
+    overflow: auto;
+}
+
+.todo-list-section ul li:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+
+
+/*Bloco da Tastk geral*/
+.task-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+/*Bloco titulo-etiqueta*/
+.task-text-wrapper{
+    display:flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+/*bloco etiqueta + texto */
+.etiqueta-wrapper{
+display: inline-block;
+}
+
+.task-etiqueta{
+    font-size: .8rem;
+    color: #b1bacb;
+    margin-top: 2rem;
+
+    border: .1rem solid #b1bacb;
+    border-radius: 2rem;
+    text-align: center;
+    padding: .1rem .4rem;
+}
+
+.date-create{
+    padding-left: .2rem;
+    font-size: .9rem;
+    color: #b1bacb;
+    margin-top: 2rem;
+}
+
+#task-progress{
+    padding-right: 5rem;
+    color: #9fa8b8;
+    padding-bottom: 1rem;
+}
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 60%;
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    html{
+        width: auto;
+        height: auto;
+        box-sizing: 10px;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+        box-sizing: 10px;
+    }
+
+    .title-text{
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 20rem;
+        display: flex;
+        padding: auto;
+    }
+
+    h1{
+        padding: 0;
+        font-family: "Manrope", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 900;
+        text-align: center;
+        margin: 0;
+        color: #11175e;
+    }
+
+    #card-index{
+        height: auto;
+        width: max-content;
+        min-height: 36rem;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+        width: 20rem;
+    }
+
+    .create{
+        display: flex;
+        height: auto;
+        width: 20rem;
+        flex-direction: column;
+    }
+
+    .btn-desing{
+        font-size: 1rem;
+        font-weight: 400;
+        border: none;
+        color: white;
+        background-color: #2D70FD;
+        padding: .8rem 1.2rem;
+        border-radius: .2rem;
+        cursor: pointer;
+    }
+
+    .todo-list-section ul li{
+        padding: 1.5rem 0;
+    }
+    .todo-list-section ul{
+        width: auto;
+    }
+
+    .task-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+    }
+    .task-text-wrapper{
+        display:inline-block;
+        width: 100%;
+        font-size: 16px;
+        gap: .5rem;
+    }
+    .etiqueta-wrapper{
+        display: flex;
+        justify-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .task-etiqueta{
+        width: 100%;
+        border-radius: 1rem;
+        max-width: max-content;
+    }
+
+    #task-progress{
+        padding-right: 0;
+        color: #9fa8b8;
+        padding-bottom: 1rem;
+    }
+
+    footer{
+        padding: 0;
+        display: flex;
+        color: #9fa8b8;
+        padding-bottom: 3rem;
+    }
+    
+
+}
